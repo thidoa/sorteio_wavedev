@@ -1,14 +1,48 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Document</title>
+    <title>Wave Dev - Brasil</title>
 </head>
 <body>
-    teste
+    <header style="background-image: url({% static 'img/tela-index.png' %});">
+     <div id="menu_principal">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button> 
+          <script src="{% static 'js/script.js' %}"></script>
+            <h1><img width="150px" src="{% static 'img/wavedev.png' %}" alt=""></h1>
+            <ul id="menu" >
+                <li><a href="" style="border-bottom: 2px solid #F90000;">HOME</a></li>
+                <li><a href="{% url 'sorteio' %}">SORTEIO</a></li>
+                <li><a href="{% url 'sobre' %}">SOBRE</a></li>
+            </ul>
+            <a class="btn" href="">Orçamento</a>
+        </nav>
+     </div>
+
+        <div class="txt">
+            <div> 
+
+            <h2><span>WEB </span> <br> DESIGN </h2>
+            <P>CRIAÇÃO & DESENVOLVIMENTO</P>
+            <button > SAIBA MAIS </button>
+
+           </div>
+            <div class="redes_sociais">
+               <a href="https://instagram.com">  <img width="25px" src="{% static 'img/instagram.png' %}" alt=""></a>
+              <a href="https://whatsapp.com"> <img width="25px" src="{% static 'img/telefone.png' %}" alt=""></a>
+               <a href="https://twitter.com"> <img width="25px" src="{% static 'img/twiter.png' %}" alt=""></a>
+            </div>
+
+        </div>
+
+    </header>
+    
 </body>
 </html>
