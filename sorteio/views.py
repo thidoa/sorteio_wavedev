@@ -82,3 +82,10 @@ thread = threading.Thread(target=agendar_sorteio, args=(data_sorteio, 10))
 
 # Inicia a execução do thread
 thread.start()
+
+def sorteio(request):
+    return render(request, 'sorteio.html')
+
+def sobre(request):
+    return render(request, 'sobre.html')
+

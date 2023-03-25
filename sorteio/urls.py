@@ -7,4 +7,6 @@ urlpatterns = [
     path('participar_sorteio', views.participar_sorteio, name="participar_sorteio"),
     path('listar', views.listar, name='listar'),
     path('sorteado', views.sorteado, name='sorteado'),
+    path('sorteio', views.sorteio, name="sorteio"),
+    path('sobre', views.sobre, name="sobre"),
 ]
