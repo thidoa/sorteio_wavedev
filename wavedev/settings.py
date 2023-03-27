@@ -148,4 +148,5 @@ EMAIL_PORT = env("EMAIL_PORT")
 EMAIL_HOST = env("EMAIL_HOST")
 
 
-CSP_DEFAULT_SRC = ("'self'", "https://railway.app")
+# CSP_DEFAULT_SRC = ("'self'", "https://railway.app")
+CSRF_TRUSTED_ORIGINS = ['https://web-production-7494.up.railway.app']
