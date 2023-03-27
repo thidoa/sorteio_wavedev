@@ -147,3 +147,5 @@ EMAIL_USE_TLS = env("EMAIL_USE_TLS")
 EMAIL_PORT = env("EMAIL_PORT")
 EMAIL_HOST = env("EMAIL_HOST")
 
+
+CSP_DEFAULT_SRC = ("'self'", "https://railway.app")
