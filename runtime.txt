@@ -1,1 +1,1 @@
-web: gunicorn wavedev.wsgi --log-file -
+python-3.10.10
