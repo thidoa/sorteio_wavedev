@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Participante
 from django.core.mail import send_mail
-from .models import Participante
 import random
 # Create your views here.
 
