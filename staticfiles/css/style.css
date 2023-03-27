@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+li,
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    height: 100vh;
+    background-size: cover;
+}
+
+header #menu_principal {
+    width: 100%;
+    background: #181818;
+}
+
+nav,
+ul {
+    display: flex;
+
+}
+
+header nav ul {
+    width: 500px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header nav ul li a {
+    /* HOME SORTEIOS SOBRE */
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #F90000;
+}
+
+header nav .btn {
+    /* ORÇAMENTO */
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    background-color: #F90000;
+    border-radius: 10px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+header nav .btn:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+header nav {
+    /* nav */
+    margin: 0 auto;
+    width: 80%;
+    background: #181818;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .txt {
+    position: relative;
+    width: 80%;
+    top: 20vh;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+header .txt h2 {
+    /* DESIGN */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 100px;
+    color: #FFFFFF;
+
+}
+
+header .txt h2 span {
+    /* WEB */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    color: #FFFFFF;
+    border-bottom: 5px solid #F90000;
+}
+
+header .txt p {
+    /* CRIAÇÃO & DESENVOLVIMENTO */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+header .txt button {
+    /* SAIBA MAIS */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px;
+    color: #FFFFFF;
+    background: none;
+    border: 1px solid #FFFFFF;
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+header .txt button:hover {
+    background-color: #ffffff;
+    color: black;
+
+}
+
+header .txt .redes_sociais,header .sobre .redes_sociais  {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 110px;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+
+#btn-mobile {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    color: #FFFFFF;
+  }
+    @media (max-width: 1000px) {
+        .btn{
+            display: none;
+        }
+        #menu {
+            flex-direction: column;
+            justify-content: space-between;
+          display: flex;
+          position: absolute;
+          width: 100%;
+          top: 60px;
+          right: 0px;
+          background: #181818;
+          transition: 0.6s;
+          z-index: 1000;
+          height: 0px;
+          visibility: hidden;
+          overflow-y: hidden;
+        }
+        nav.active #menu {
+            padding: 10px;
+          height: calc(50vh - 70px);
+          visibility: visible;
+          overflow-y: auto;
+        }
+        #btn-mobile {
+          display: flex;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border: none;
+          background: none;
+          cursor: pointer;
+          gap: 0.5rem;
+        }
+        #hamburger {
+          border-top: 2px solid;
+          width: 20px;
+        }
+        #hamburger::after,
+        #hamburger::before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: currentColor;
+          margin-top: 5px;
+          transition: 0.3s;
+          position: relative;
+        }
+        #nav.active #hamburger {
+          border-top-color: transparent;
+        }
+        #nav.active #hamburger::before {
+          transform: rotate(135deg);
+        }
+        #nav.active #hamburger::after {
+          transform: rotate(-135deg);
+          top: -7px;
+        }
+        header .txt .redes_sociais,header .sobre .redes_sociais{
+            padding-top: 70px;
+            height: 0;
+            flex-direction: row;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+        header .txt h2 span , header .txt h2 {
+            font-size: 70px;
+        }
+        header .txt ,header .sobre{
+            top: 10vh;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+        }
+      }

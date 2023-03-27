@@ -4,7 +4,7 @@ from django.db import models
 
 class Participante(models.Model):
     nome = models.CharField(max_length=200)
-    cidade = models.CharField(max_length=200)
+    estado = models.CharField(max_length=200)
     telefone = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
 
